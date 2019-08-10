@@ -5,6 +5,7 @@ import os
 def main():
     csv_path = os.path.join('Resources', 'election_data.csv')
     with open(csv_path, newline="") as csvfile:
+        #using list to track the added name
         name_list = []
         vote_list = []
         csv_reader = csv.DictReader(csvfile)
